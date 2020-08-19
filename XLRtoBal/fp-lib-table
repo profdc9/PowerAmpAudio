@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name XLRtoBal)(type KiCad)(uri "$(KIPRJMOD)/XLRtoBal.pretty")(options "")(descr ""))
+)
