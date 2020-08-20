@@ -323,17 +323,6 @@ F 3 "" H 6000 2500 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L C_Small C5
-U 1 1 5F3D4D81
-P 5350 2850
-F 0 "C5" V 5450 2800 50  0000 L CNN
-F 1 "CB" V 5200 2800 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5350 2850 50  0001 C CNN
-F 3 "" H 5350 2850 50  0001 C CNN
-	1    5350 2850
-	0    -1   -1   0   
-$EndComp
-$Comp
 L Conn_01x04 J3
 U 1 1 5F3D5140
 P 7850 1100
@@ -1087,17 +1076,6 @@ F 3 "" H 6000 5200 50  0001 C CNN
 	1    6000 5200
 	1    0    0    -1  
 $EndComp
-$Comp
-L C_Small C17
-U 1 1 5F3DABDA
-P 5350 5550
-F 0 "C17" V 5450 5500 50  0000 L CNN
-F 1 "CB" V 5200 5500 50  0000 L CNN
-F 2 "Capacitors_THT:C_Disc_D5.0mm_W2.5mm_P5.00mm" H 5350 5550 50  0001 C CNN
-F 3 "" H 5350 5550 50  0001 C CNN
-	1    5350 5550
-	0    -1   -1   0   
-$EndComp
 Wire Wire Line
 	1800 5300 1800 4550
 Wire Wire Line
@@ -1305,4 +1283,26 @@ Wire Wire Line
 Wire Wire Line
 	5800 1600 6400 1600
 Connection ~ 5800 2150
+$Comp
+L CP_Small C17
+U 1 1 5F3DF8BC
+P 5350 5550
+F 0 "C17" H 5360 5620 50  0000 L CNN
+F 1 "220 uF" H 5360 5470 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P5.00mm" H 5350 5550 50  0001 C CNN
+F 3 "" H 5350 5550 50  0001 C CNN
+	1    5350 5550
+	0    1    1    0   
+$EndComp
+$Comp
+L CP_Small C5
+U 1 1 5F3DFCF8
+P 5350 2850
+F 0 "C5" H 5360 2920 50  0000 L CNN
+F 1 "220 uF" H 5360 2770 50  0000 L CNN
+F 2 "Capacitors_THT:CP_Radial_D8.0mm_P5.00mm" H 5350 2850 50  0001 C CNN
+F 3 "" H 5350 2850 50  0001 C CNN
+	1    5350 2850
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
