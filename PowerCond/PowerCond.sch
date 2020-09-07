@@ -202,18 +202,6 @@ F 4 "C178471" H 3200 2750 60  0001 C CNN "LCSC"
 	1    0    0    -1  
 $EndComp
 $Comp
-L C C3
-U 1 1 5F3E5214
-P 3450 3000
-F 0 "C3" H 3475 3100 50  0000 L CNN
-F 1 "1 uF" H 3475 2900 50  0000 L CNN
-F 2 "Capacitors_THT:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal" H 3488 2850 50  0001 C CNN
-F 3 "" H 3450 3000 50  0001 C CNN
-F 4 "C178471" H 3450 3000 60  0001 C CNN "LCSC"
-	1    3450 3000
-	1    0    0    -1  
-$EndComp
-$Comp
 L C C2
 U 1 1 5F3E52BA
 P 3200 3750
@@ -223,18 +211,6 @@ F 2 "Capacitors_THT:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal" H 3238 3600 50  0
 F 3 "" H 3200 3750 50  0001 C CNN
 F 4 "C178471" H 3200 3750 60  0001 C CNN "LCSC"
 	1    3200 3750
-	1    0    0    -1  
-$EndComp
-$Comp
-L C C4
-U 1 1 5F3E5377
-P 3450 4000
-F 0 "C4" H 3475 4100 50  0000 L CNN
-F 1 "1 uF" H 3475 3900 50  0000 L CNN
-F 2 "Capacitors_THT:C_Axial_L5.1mm_D3.1mm_P12.50mm_Horizontal" H 3488 3850 50  0001 C CNN
-F 3 "" H 3450 4000 50  0001 C CNN
-F 4 "C178471" H 3450 4000 60  0001 C CNN "LCSC"
-	1    3450 4000
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -929,23 +905,11 @@ Connection ~ 3200 4000
 Wire Wire Line
 	3050 4000 3050 5050
 Wire Wire Line
-	3450 3850 3450 3600
-Connection ~ 3450 3600
-Wire Wire Line
-	3450 4150 3450 4400
-Connection ~ 3450 4400
-Wire Wire Line
 	3700 3650 3700 3600
 Connection ~ 3700 3600
 Connection ~ 3700 4400
 Wire Wire Line
 	3050 2200 3050 3000
-Wire Wire Line
-	3450 2850 3450 2600
-Connection ~ 3450 2600
-Wire Wire Line
-	3450 3150 3450 3400
-Connection ~ 3450 3400
 Wire Wire Line
 	3700 2650 3700 2600
 Connection ~ 3700 2600
