@@ -1091,4 +1091,38 @@ Wire Wire Line
 	6100 2550 6100 3000
 Connection ~ 7550 4400
 Connection ~ 7950 4400
+$Comp
+L R R1
+U 1 1 5F5F98B3
+P 8100 3000
+F 0 "R1" V 8180 3000 50  0000 C CNN
+F 1 "220k" V 8100 3000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8030 3000 50  0001 C CNN
+F 3 "" H 8100 3000 50  0001 C CNN
+	1    8100 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 2850 8100 2600
+Connection ~ 8100 2600
+Wire Wire Line
+	8100 3150 8100 3400
+Connection ~ 8100 3400
+$Comp
+L R R2
+U 1 1 5F5FA14C
+P 8100 4000
+F 0 "R2" V 8180 4000 50  0000 C CNN
+F 1 "220k" V 8100 4000 50  0000 C CNN
+F 2 "Resistors_THT:R_Axial_DIN0309_L9.0mm_D3.2mm_P12.70mm_Horizontal" V 8030 4000 50  0001 C CNN
+F 3 "" H 8100 4000 50  0001 C CNN
+	1    8100 4000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8100 3850 8100 3600
+Connection ~ 8100 3600
+Wire Wire Line
+	8100 4150 8100 4400
+Connection ~ 8100 4400
 $EndSCHEMATC
