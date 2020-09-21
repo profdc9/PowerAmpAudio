@@ -3,7 +3,7 @@
   (general
     (links 105)
     (no_connects 0)
-    (area 35.484999 45.644999 243.915001 94.055001)
+    (area 34.622381 41.004761 244.77762 98.595239)
     (thickness 1.6)
     (drawings 22)
     (tracks 296)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 2)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 1)
     (user_trace_width 2)
@@ -92,7 +92,7 @@
       (mirror false)
       (drillshape 0)
       (scaleselection 1)
-      (outputdirectory ""))
+      (outputdirectory gerber))
   )
 
   (net 0 "")
@@ -4215,8 +4215,8 @@
   (segment (start 80.27 93.3) (end 42.5 93.3) (width 1) (layer B.Cu) (net 2) (tstamp 5F3CBC22))
   (segment (start 82.27 91.3) (end 80.27 93.3) (width 1) (layer B.Cu) (net 2) (tstamp 5F3CBC21))
   (segment (start 113.27 71.3) (end 113.27 92.8) (width 1) (layer B.Cu) (net 2) (tstamp 5F3FECB5))
-  (segment (start 210.82 62.11) (end 210.82 68.15) (width 2) (layer F.Cu) (net 3) (status 400000))
-  (segment (start 210.82 68.15) (end 212.97 70.3) (width 2) (layer F.Cu) (net 3) (tstamp 5F5F9BFB) (status 800000))
+  (segment (start 210.82 62.11) (end 210.82 68.15) (width 2) (layer F.Cu) (net 3))
+  (segment (start 210.82 68.15) (end 212.97 70.3) (width 2) (layer F.Cu) (net 3) (tstamp 5F5F9BFB))
   (segment (start 164.52 63.05) (end 167.64 65.92) (width 2) (layer F.Cu) (net 3) (status 10))
   (segment (start 169.77 66.55) (end 169.77 65.92) (width 2) (layer F.Cu) (net 3) (tstamp 5F3FEC1F))
   (segment (start 169.14 65.92) (end 169.77 66.55) (width 2) (layer F.Cu) (net 3) (tstamp 5F3FEC1E))
@@ -4239,8 +4239,8 @@
   (segment (start 210.82 64.77) (end 212.09 66.04) (width 4) (layer F.Cu) (net 3) (tstamp 5F3C3D83))
   (segment (start 196.02 62.3) (end 210.82 62.11) (width 4) (layer F.Cu) (net 3) (status 10))
   (segment (start 181.27 62.3) (end 196.02 62.3) (width 4) (layer F.Cu) (net 3) (status 10))
-  (segment (start 196.02 54.8) (end 197.77 54.8) (width 2) (layer B.Cu) (net 4) (status 400000))
-  (segment (start 203.27 67.3) (end 200.27 70.3) (width 2) (layer B.Cu) (net 4) (tstamp 5F5F9BF7) (status 800000))
+  (segment (start 196.02 54.8) (end 197.77 54.8) (width 2) (layer B.Cu) (net 4))
+  (segment (start 203.27 67.3) (end 200.27 70.3) (width 2) (layer B.Cu) (net 4) (tstamp 5F5F9BF7))
   (segment (start 203.27 60.3) (end 203.27 67.3) (width 2) (layer B.Cu) (net 4) (tstamp 5F5F9BF6))
   (segment (start 197.77 54.8) (end 203.27 60.3) (width 2) (layer B.Cu) (net 4) (tstamp 5F5F9BF5))
   (segment (start 164.52 50.8) (end 165.52 50.8) (width 2) (layer F.Cu) (net 4))
