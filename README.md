@@ -7,12 +7,12 @@ This is a project designed to be a good quality amplifier that is achieves good 
 There are five PCBs in this project:
 
 1.  PowerampC300 - a C300 power amplifier that uses TO220 transistors (BCE layout) as the intermediate power transistors, with the benchmark devices being MJE15032/MJE15033.
-2.  PowerampC300MJE34035 - the same power amplifier that uses TO126 devices (ECB layout), the benchmark devices being MJE340/350.
+2.  PowerampC300TO126 - the same power amplifier that uses TO126 devices (ECB layout), the benchmark devices being MJE340/350.
 3.  A power conditioning board (PowerCond) intended to provide clean power to the PCBs and isolate the power between the channels, as well as enable the use of switching power supplies by filtering switching noise.  It may also be used with a conventional unregulated supply (diode bridge and filter capacitors).
-4.  A PCB with XLR to unbalanced conversion.  This is currently using a THAT1200 part but can be reconfigured for other types of chips from Analog Devices or Texas Instruments.  
+4.  A PCB with XLR to unbalanced conversion.  This is currently using a THAT1200 part but can be reconfigured for other types of chips from Analog Devices SSM2131 or Texas Instruments INA134.  
 5.  SoftStart - a relay based soft start which supports external triggering mode from an AV receiver.  This PCB prevents current inrush when an unregulated supply with large reservoir capacitors are used.
 
-The small signal transistors are of 2N5401/2N5555 type (though MPSA42/MPSA92 may be substituted, with the THD approximately doubling because of the reduced loop bandwidth as the beta of these transistors is smaller).  Q1/Q2 may be advantageously substituted with MPSA18 if available to decrease the noise at the input.
+The small signal transistors are of 2N5401/2N5551 type (though MPSA42/MPSA92 may be substituted, with the THD approximately doubling because of the reduced loop bandwidth as the beta of these transistors is smaller).  Q1/Q2 may be advantageously substituted with MPSA18 if available to decrease the noise at the input.
 
 The power transistors may be of many TO-247 or TO-264 types as available.  The footprints for the power transistors allow for under PCB, over PCB, or surface lead mounting.
 
