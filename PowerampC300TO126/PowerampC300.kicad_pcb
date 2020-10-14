@@ -3,7 +3,7 @@
   (general
     (links 211)
     (no_connects 0)
-    (area 25.924999 42.924999 266.075001 106.075001)
+    (area 21.950952 42.728 270.279049 107.435)
     (thickness 1.6)
     (drawings 18)
     (tracks 681)
@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 2)
+    (last_trace_width 0.25)
     (user_trace_width 0.5)
     (user_trace_width 1)
     (user_trace_width 2)
@@ -786,12 +786,12 @@
     )
   )
 
-  (module TO_SOT_Packages_THT:TO-92_Inline_Wide (layer F.Cu) (tedit 58CE52AF) (tstamp 5F5BADF1)
+  (module TO_SOT_Packages_THT:TO-92_Inline_Wide (layer F.Cu) (tedit 5F8701D6) (tstamp 5F5BADF1)
     (at 114.8 98.8)
     (descr "TO-92 leads in-line, wide, drill 0.8mm (see NXP sot054_po.pdf)")
     (tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
     (path /5F5DCE4C)
-    (fp_text reference Q1 (at 2.54 -3.56 180) (layer F.SilkS)
+    (fp_text reference Q1 (at 7 -0.6 270) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 2N5551 (at 2.54 2.79) (layer F.Fab)
@@ -5118,12 +5118,12 @@
     )
   )
 
-  (module TO_SOT_Packages_THT:TO-92_Inline_Wide (layer F.Cu) (tedit 58CE52AF) (tstamp 5F5BAE04)
+  (module TO_SOT_Packages_THT:TO-92_Inline_Wide (layer F.Cu) (tedit 5F8701D2) (tstamp 5F5BAE04)
     (at 120 102.8 180)
     (descr "TO-92 leads in-line, wide, drill 0.8mm (see NXP sot054_po.pdf)")
     (tags "to-92 sc-43 sc-43a sot54 PA33 transistor")
     (path /5F5DD0E5)
-    (fp_text reference Q2 (at 2.54 -3.56 360) (layer F.SilkS)
+    (fp_text reference Q2 (at -2 -0.4 450) (layer F.SilkS)
       (effects (font (size 1 1) (thickness 0.15)))
     )
     (fp_text value 2N5551 (at 2.54 2.79 180) (layer F.Fab)
