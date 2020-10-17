@@ -43,6 +43,7 @@ Because the lead order of TO-126 transistors (ECB) is the opposite of the lead o
 The VAS transistors (Q10 and Q12) should have Vcemax at least 200 V, minimum collector current 100 mA, hFE at least 70 (more the better), and gain-bandwidth product at least 15 MHz.  Suitable devices are:
 
 TO-220:  MJE15032 (NPN), MJE15033 (PNP), 3DA4793 (NPN), 3CA1387 (PNP)
+
 TO-126:  MJE340 (NPN), MJE350 (PNP), 2SC3503 (NPN), 2SA1381 (PNP)
 
 The bias servo transistor doesn't need to be anything special should have Vcemax at least 200 V.  Suitable devices are the same types used for the VAS transistors.  
@@ -50,15 +51,21 @@ The bias servo transistor doesn't need to be anything special should have Vcemax
 The driver transistors should have Vcemax at least 200 V, minimum collector current 1 A, hFE at least 50, and gain-bandwidth product at least 15 MHz.  Suitable devices are:
 
 TO-220:  MJE15032 (NPN), MJE15033 (PNP), 3DA4793 (NPN), 3CA1387 (PNP)
+
 TO-126:  MJE340 (NPN), MJE350 (PNP)
 
 The output transistors are TO-247/TO-264/TO-3P type.  They should have Vcemax at least 200 V, minimum collector current 1 A, hFE at least 50, and power dissipation at 25 C at least 150 W.  Suitable types include:
 
 MJL3281A (NPN) / MJL1302A (PNP)  TO-264
+
 MJL3281W (NPN) / MJL1302W (PNP)  TO-247
+
 NJW0281 (NPN) / NJW0302 (PNP) TO-3P
+
 2SC5200 (NPN) / 2SA1943 (NPN) TO-264
+
 MJL21194 (NPN) / MJL21193 (PNP) TO-264
+
 MJW21194 (NPN) / MJW21193 (PNP) TO-247
 
 There are known to be versions of the MJL15032, MJL15032, NJW0281, NJW0302 available from by Chinese vendors (search lcsc.com).  These may have sufficient performance for creating lower cost implementations of the amplifier. 
@@ -99,9 +106,22 @@ Once you are confident that the amplifier is stable, you can try your (not best)
 
 After all of this, you should be good to go.  Be careful as the amplifier has a lot of power and can damage speakers not rated for the full power.
 
- 
+# Building the power conditioning board
 
+The power conditioning board is not strictly required.  However, it serves three functions.  It rectifies AC to DC when an unregulated transformer supply is used.  It serves to filter out RF noise and brief voltage spikes from the diode commutation from the amplifier, as well as any other noise coming from the mains.  The filtering is also useful is one uses switching power supplies rather than an unregulated transformer supply to filter the switching noise.  Finally, it serves as a terminal block to connect the reservoir capacitors and amplifier.  Typically, one power conditioning board is used per channel.
 
+The common mode chokes can be constructed by hand.  Four are required for each power conditioning board.   Typically, small ferrite toroids are obtained, usually between 16 to 25 mm in outer diameter.   Small green cores available widely on sites like ebay, Amazon, or aliexpress are suitable.  The primary and secondary turns are two different colors of 18 AWG (1 mm diameter) solid copper wire.  The two wires are wound together side-by-side through the core five or six times.  When soldering the core into the PCB, the silkscreening shows how the wires are connected.  The same color wire is soldered to both pads connected by the line in the silkscreen.  The same ends of the two wires are soldered to the two pads next to each other on the same side of the PCB.  Solder should be applied to both the top side and bottom side of the pad to ensure the wire is held solidly.
+
+The mounting holes at the corners of the PCB are intended to be grounded to the case through standoffs to shunt the filtered RF noise signal to the case.  
 
 # Building the SoftStart board
 
+The SoftStart board is relatively straightforward to build.  Special attention should be paid to acquiring X2 capacitors for C1 and C2.  The extra non-plated through holes in the PCB are so that the mains and switch wires soldered to the PCB can be threaded through the PCB and collared with a cable tie as a strain relief so that it does not pull out of the PCB.  The cable tie will prevent stress from being applied to the solder joint on the PCB.  Generally, a cover should be placed over the back side of the PCB (for example a polycarbonate sheet) to prevent contact of the solder joints with the case.  It is highly recommend to put heat shrink tubing over any exposed mains connections, for example, at the power entry panel, switch or fuse holder.  
+
+Depending on the size of the reservoir capacitors in your amplifier, it may be necessary to change the 150 ohm resistors to a smaller value and allow a somewhat larger charging current before the resistors are bypassed by the relay.  This depends on the peak current that is permitted.
+
+# Building the XLR to Unbalanced board
+
+This board uses the THAT1200 balanced line receiver to transform the signal from a balanced XLR connector to an unbalanced signal.  The unbalanced signal may be connected from the XLR to Unbalanced board to the amplifier board with a shielded SMA cable to prevent noise pickup.  If the THAT1200 is not available, the THAT1240, INA134, or SSM2141 balanced line receivers may be used.  In this case, C5 and C17 should be omitted and JP1 and JP2 are shorted.
+
+The transistors Q1 and Q2 should have heatsinks attached and fitted with pads and bushings to electrically isolate the heatsink from the collector.  J12 is a ground terminal block from which a grounding wire and lug may be extended to the common input grounding point on the chassis of the amplifier.
