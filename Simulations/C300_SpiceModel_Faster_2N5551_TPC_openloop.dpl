@@ -1,0 +1,29 @@
+<Qucs Schematic 0.0.22>
+<Properties>
+  <View=0,0,1456,800,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=C300_SpiceModel_Faster_2N5551_TPC_openloop.dat>
+  <DataDisplay=C300_SpiceModel_Faster_2N5551_TPC_openloop.sch>
+  <OpenDisplay=1>
+  <Script=C300_SpiceModel_Faster_2N5551_TPC_openloop.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 90 789 1326 729 3 #c0c0c0 1 10 1 1 1 1e+08 1 -214.206 100 214.573 0 -100 20 100 315 0 225 "" "" "">
+	<"ngspice/ac.angld" #0000ff 0 3 0 0 0>
+	<"ngspice/ac.gaind" #ff0000 0 3 0 0 1>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
