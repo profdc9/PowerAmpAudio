@@ -64,7 +64,7 @@ U 1 1 5F3E49B6
 P 1750 3150
 F 0 "J2" H 1750 3250 50  0000 C CNN
 F 1 "Conn_01x02" H 1800 3350 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 1750 3150 50  0001 C CNN
+F 2 "PowerCond:TerminalBlock_bornier-2_P5.08mm_with_spade" H 1750 3150 50  0001 C CNN
 F 3 "" H 1750 3150 50  0001 C CNN
 F 4 "C395849" H 1750 3150 60  0001 C CNN "LCSC"
 	1    1750 3150
@@ -88,7 +88,7 @@ U 1 1 5F3E4AAA
 P 1750 3950
 F 0 "J3" H 1750 4050 50  0000 C CNN
 F 1 "Conn_01x02" H 1750 3750 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 1750 3950 50  0001 C CNN
+F 2 "PowerCond:TerminalBlock_bornier-2_P5.08mm_with_spade" H 1750 3950 50  0001 C CNN
 F 3 "" H 1750 3950 50  0001 C CNN
 F 4 "C395849" H 1750 3950 60  0001 C CNN "LCSC"
 	1    1750 3950
@@ -219,7 +219,7 @@ U 1 1 5F3E546D
 P 1750 2700
 F 0 "J1" H 1750 2800 50  0000 C CNN
 F 1 "Conn_01x02" H 1750 2500 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 1750 2700 50  0001 C CNN
+F 2 "PowerCond:TerminalBlock_bornier-2_P5.08mm_with_spade" H 1750 2700 50  0001 C CNN
 F 3 "" H 1750 2700 50  0001 C CNN
 F 4 "C395849" H 1750 2700 60  0001 C CNN "LCSC"
 	1    1750 2700
@@ -231,7 +231,7 @@ U 1 1 5F3E557E
 P 1750 4400
 F 0 "J4" H 1750 4500 50  0000 C CNN
 F 1 "Conn_01x02" H 1750 4200 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 1750 4400 50  0001 C CNN
+F 2 "PowerCond:TerminalBlock_bornier-2_P5.08mm_with_spade" H 1750 4400 50  0001 C CNN
 F 3 "" H 1750 4400 50  0001 C CNN
 F 4 "C395849" H 1750 4400 60  0001 C CNN "LCSC"
 	1    1750 4400
@@ -436,7 +436,7 @@ U 1 1 5F3E75F7
 P 8500 2950
 F 0 "J5" H 8500 3050 50  0000 C CNN
 F 1 "Conn_01x02" H 8500 2750 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 8500 2950 50  0001 C CNN
+F 2 "PowerCond:TerminalBlock_bornier-2_P5.08mm_with_spade" H 8500 2950 50  0001 C CNN
 F 3 "" H 8500 2950 50  0001 C CNN
 F 4 "C395849" H 8500 2950 60  0001 C CNN "LCSC"
 	1    8500 2950
@@ -448,7 +448,7 @@ U 1 1 5F3E7806
 P 8500 3900
 F 0 "J6" H 8500 4000 50  0000 C CNN
 F 1 "Conn_01x02" H 8500 3700 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 8500 3900 50  0001 C CNN
+F 2 "PowerCond:TerminalBlock_bornier-2_P5.08mm_with_spade" H 8500 3900 50  0001 C CNN
 F 3 "" H 8500 3900 50  0001 C CNN
 F 4 "C395849" H 8500 3900 60  0001 C CNN "LCSC"
 	1    8500 3900
@@ -460,7 +460,7 @@ U 1 1 5F3E7A30
 P 8900 2950
 F 0 "J7" H 8900 3050 50  0000 C CNN
 F 1 "Conn_01x02" H 8900 2750 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 8900 2950 50  0001 C CNN
+F 2 "PowerCond:TerminalBlock_bornier-2_P5.08mm_with_spade" H 8900 2950 50  0001 C CNN
 F 3 "" H 8900 2950 50  0001 C CNN
 F 4 "C395849" H 8900 2950 60  0001 C CNN "LCSC"
 	1    8900 2950
@@ -472,7 +472,7 @@ U 1 1 5F3E7C07
 P 8900 3900
 F 0 "J8" H 8900 4000 50  0000 C CNN
 F 1 "Conn_01x02" H 8900 3700 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 8900 3900 50  0001 C CNN
+F 2 "PowerCond:TerminalBlock_bornier-2_P5.08mm_with_spade" H 8900 3900 50  0001 C CNN
 F 3 "" H 8900 3900 50  0001 C CNN
 F 4 "C395849" H 8900 3900 60  0001 C CNN "LCSC"
 	1    8900 3900

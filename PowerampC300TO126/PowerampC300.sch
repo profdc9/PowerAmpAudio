@@ -965,7 +965,7 @@ U 1 1 5F3D5221
 P 9700 3450
 F 0 "J1" H 9700 3550 50  0000 C CNN
 F 1 "Conn_01x02" H 9700 3250 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 9700 3450 50  0001 C CNN
+F 2 "poweramp:TerminalBlock_bornier-2_P5.08mm_with_spade" H 9700 3450 50  0001 C CNN
 F 3 "" H 9700 3450 50  0001 C CNN
 F 4 "C395849" H 9700 3450 60  0001 C CNN "LCSC"
 	1    9700 3450
@@ -1013,14 +1013,14 @@ Text GLabel 10550 5200 3    60   Input ~ 0
 $Comp
 L Conn_01x02 J2
 U 1 1 5F3DAA81
-P 9800 5100
-F 0 "J2" H 9800 5200 50  0000 C CNN
-F 1 "Conn_01x02" H 9800 4900 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 9800 5100 50  0001 C CNN
-F 3 "" H 9800 5100 50  0001 C CNN
-F 4 "C395849" H 9800 5100 60  0001 C CNN "LCSC"
-	1    9800 5100
-	-1   0    0    1   
+P 9800 5000
+F 0 "J2" H 9800 5100 50  0000 C CNN
+F 1 "Conn_01x02" H 9800 4800 50  0000 C CNN
+F 2 "poweramp:TerminalBlock_bornier-2_P5.08mm_with_spade" H 9800 5000 50  0001 C CNN
+F 3 "" H 9800 5000 50  0001 C CNN
+F 4 "C395849" H 9800 5000 60  0001 C CNN "LCSC"
+	1    9800 5000
+	-1   0    0    -1  
 $EndComp
 $Comp
 L Conn_01x02 J3
@@ -1028,7 +1028,7 @@ U 1 1 5F3DABFE
 P 9850 5800
 F 0 "J3" H 9850 5900 50  0000 C CNN
 F 1 "Conn_01x02" H 9850 5600 50  0000 C CNN
-F 2 "Connectors_Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 9850 5800 50  0001 C CNN
+F 2 "poweramp:TerminalBlock_bornier-2_P5.08mm_with_spade" H 9850 5800 50  0001 C CNN
 F 3 "" H 9850 5800 50  0001 C CNN
 F 4 "C395849" H 9850 5800 60  0001 C CNN "LCSC"
 	1    9850 5800

@@ -36,6 +36,8 @@ This project involves high voltages, high currents, and high power.  You must ta
 
 # Part substitutions
 
+## Transistors
+
 The small signal transistors are chosen to be 2N5551 (NPN) and 2N5401 (PNP).  These should have Vcemax of at least 150 V, minimum collector current 100 mA, hFE at least 100, and gain-bandwidth product 100 MHz or greater.  MPSA42 (NPN) and MPSA92 (PNP) may be subsituted for 2N5551/2N5401, however, these have reduced gain so that the loop gain is reduced and the distortion is somewhat increased.
 
 Because the lead order of TO-126 transistors (ECB) is the opposite of the lead order for TO-220 transistors, TO-126 made be substituted for TO-220 (and vice versa) as long as the device is placed reversed in the PCB (pin 1 and pin 3, and pin 3 at pin 1).  This can not be done with the driver transistors Q15/Q16 because these are against the heat sink and therefore can not be reversed in place.  Therefore, if one wishes to use TO-220 driver transistors but TO-126 VAS transistors, one should use the PowerampC300 project (and not the PowerampC300TO126 project) so that the driver transistors will be oriented correctly to be placed against the heatsink.
@@ -69,6 +71,18 @@ MJL21194 (NPN) / MJL21193 (PNP) TO-264
 MJW21194 (NPN) / MJW21193 (PNP) TO-247
 
 There are known to be versions of the MJL15032, MJL15032, NJW0281, NJW0302 available from by Chinese vendors (search lcsc.com).  These may have sufficient performance for creating lower cost implementations of the amplifier. 
+
+## Power terminals
+
+The power terminals are designed to take the common 5.0/5.08 mm spaced screw terminal blocks.  Alternatively, 6.35 mm male spade terminals with 5.0 mm pitch pins may be soldered into the board.  Screw terminal blocks are easier to swap out but are not as secure, while spade terminals can be quite secure but sometimes difficult to remove if required.
+
+## Audio connectors
+
+To connect unbalanced audio to the amplifier PCBs and to the balanced to unbalanced PCBs, either two wires or a SMA cable may be used.  A SMA cable has the advantage of inherent shielding.  If a SMA cable is wired to an input unbalanced RCA jack, the jack should be an isolated jack with the ring of the jack wired to the input star ground where the chassis earth ground is.
+
+## Balanced to unbalanced differential line receiver
+
+The balanced to unbalanced PCB can be set up to preferentially use the THAT1200, but also can be configured for the THAT1240, INA134, or SSM2141.
 
 # Building the amplifier (PowerampC300 and PowerampC300TO126)
 
