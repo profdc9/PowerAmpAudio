@@ -1,11 +1,11 @@
 <Qucs Schematic 0.0.22>
 <Properties>
-  <View=2,50,1574,999,0.991686,46,0>
+  <View=-48,0,1536,929,1,48,0>
   <Grid=10,10,0>
-  <DataSet=C300_SpiceModel_Faster_2N5551_openloop.dat>
-  <DataDisplay=C300_SpiceModel_Faster_2N5551_openloop.sch>
+  <DataSet=C300_SpiceModel_Faster_2N5551_OITPC_openloop.dat>
+  <DataDisplay=C300_SpiceModel_Faster_2N5551_OITPC_openloop.sch>
   <OpenDisplay=1>
-  <Script=C300_SpiceModel_Faster_2N5551_openloop.m>
+  <Script=C300_SpiceModel_Faster_2N5551_OITPC_openloop.m>
   <RunScript=0>
   <showFrame=0>
   <FrameText0=Title>
@@ -20,7 +20,7 @@
 <Wires>
 </Wires>
 <Diagrams>
-  <Rect 120 839 1326 729 3 #c0c0c0 1 10 1 1 1 1e+08 1 -214.206 100 214.573 0 -100 20 100 315 0 225 "" "" "">
+  <Rect 70 799 1326 729 3 #c0c0c0 1 10 1 1 1 1e+08 1 -214.206 100 214.573 0 -100 20 100 315 0 225 "" "" "">
 	<"ngspice/ac.angld" #0000ff 0 3 0 0 0>
 	<"ngspice/ac.gaind" #ff0000 0 3 0 0 1>
   </Rect>

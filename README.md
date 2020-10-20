@@ -139,3 +139,18 @@ Depending on the size of the reservoir capacitors in your amplifier, it may be n
 This board uses the THAT1200 balanced line receiver to transform the signal from a balanced XLR connector to an unbalanced signal.  The unbalanced signal may be connected from the XLR to Unbalanced board to the amplifier board with a shielded SMA cable to prevent noise pickup.  If the THAT1200 is not available, the THAT1240, INA134, or SSM2141 balanced line receivers may be used.  In this case, C5 and C17 should be omitted and JP1 and JP2 are shorted.
 
 The transistors Q1 and Q2 should have heatsinks attached and fitted with pads and bushings to electrically isolate the heatsink from the collector.  J12 is a ground terminal block from which a grounding wire and lug may be extended to the common input grounding point on the chassis of the amplifier.
+
+# Different types of feedback
+
+There are three kinds of feedback that can be customized to provide a tradeoff of distortion vs. loop stability.  Some audiophiles like to attain the minimum distortion.  It is likely that the distortion is sufficiently low, especially at power levels significantly below the maximum power, that distortion is not likely to be noticed.  It is highly recommended when using compensation methods that could be more unstable that the inductor L1 is installed, as any significant capacitive loading is likely to cause oscillation.
+
+For the audiophile true believers, three feedback options are provided: Conventional Miller Compensation (CMC), Two-Pole Compensation (TPC), and Output Include Two-Pole Compensation (OITPC).
+
+## Conventional Miller Compensation (CMC)
+As shown, the circuit is configured for CMC.  In this case, C9=150 pF, C3=150 pF, C25 is a shorting wire, R18, C20, and C24 are not included.  For slightly less distortion, C9=100 pF and C3=100 pF. 
+
+## Two-Pole Compensation (TPC)
+To configure for Two-Pole Compensation, C3 and C20 are not included, C9 and C25 are 220 pF, R18 is 2k2, and C24 is 100 nF.  Simulations suggest that at mid range frequencies, distortion can be decreased by 14 dB, and at 10 kHz by 8 dB.
+
+## Output Inclusive Two-Pole Compensation (OITPC)
+OITPC is a relatively new option that is included for study and experimentation.  To configure for OITPC, C9 and C25 are 100 pF, R18 is 390 ohms, C20 is 100 pF, and C24 is 100 nF, C3 is not included.  

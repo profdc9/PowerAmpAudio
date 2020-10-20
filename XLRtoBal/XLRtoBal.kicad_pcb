@@ -37,7 +37,7 @@
   )
 
   (setup
-    (last_trace_width 1)
+    (last_trace_width 0.25)
     (user_trace_width 0.35)
     (user_trace_width 0.5)
     (user_trace_width 1)
@@ -61,7 +61,7 @@
     (mod_edge_width 0.15)
     (mod_text_size 1 1)
     (mod_text_width 0.15)
-    (pad_size 5.5 5.5)
+    (pad_size 5 5)
     (pad_drill 3.048)
     (pad_to_mask_clearance 0.2)
     (aux_axis_origin 0 0)
@@ -2195,7 +2195,7 @@
       (net 26 "Net-(J6-Pad1)"))
   )
 
-  (module Connectors:1pin (layer F.Cu) (tedit 5F3FE857) (tstamp 5F3D722A)
+  (module Connectors:1pin (layer F.Cu) (tedit 5F8E4719) (tstamp 5F3D722A)
     (at 184 62)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
@@ -2209,7 +2209,7 @@
     (fp_circle (center 0 0) (end 2 0.8) (layer F.Fab) (width 0.1))
     (fp_circle (center 0 0) (end 2.6 0) (layer F.CrtYd) (width 0.05))
     (fp_circle (center 0 0) (end 0 -2.286) (layer F.SilkS) (width 0.12))
-    (pad 1 thru_hole circle (at 0 0) (size 4.064 4.064) (drill 3.048) (layers *.Cu *.Mask))
+    (pad "" thru_hole circle (at 0 0) (size 5 5) (drill 3.048) (layers *.Cu *.Mask))
   )
 
   (module Connectors:1pin (layer F.Cu) (tedit 5F3FE80D) (tstamp 5F3D7232)
@@ -2230,7 +2230,7 @@
       (net 27 "Net-(J8-Pad1)"))
   )
 
-  (module Connectors:1pin (layer F.Cu) (tedit 5861332C) (tstamp 5F3D723A)
+  (module Connectors:1pin (layer F.Cu) (tedit 5F8E470F) (tstamp 5F3D723A)
     (at 184 149)
     (descr "module 1 pin (ou trou mecanique de percage)")
     (tags DEV)
@@ -2244,7 +2244,7 @@
     (fp_circle (center 0 0) (end 2 0.8) (layer F.Fab) (width 0.1))
     (fp_circle (center 0 0) (end 2.6 0) (layer F.CrtYd) (width 0.05))
     (fp_circle (center 0 0) (end 0 -2.286) (layer F.SilkS) (width 0.12))
-    (pad 1 thru_hole circle (at 0 0) (size 4.064 4.064) (drill 3.048) (layers *.Cu *.Mask))
+    (pad "" thru_hole circle (at 0 0) (size 5 5) (drill 3.048) (layers *.Cu *.Mask))
   )
 
   (module Connectors:SMA_THT_Jack_Straight (layer F.Cu) (tedit 58C301F2) (tstamp 5F3D7618)
@@ -3547,10 +3547,10 @@
         (xy 113.1855 60.342) (xy 112.799225 60.342) (xy 112.690006 60.38724) (xy 112.596857 60.325) (xy 173.752034 60.325)
         (xy 173.742 60.349224) (xy 173.742 61.0605) (xy 173.9315 61.25) (xy 175.25 61.25) (xy 175.25 60.73)
         (xy 176.75 60.73) (xy 176.75 61.25) (xy 178.0685 61.25) (xy 178.258 61.0605) (xy 178.258 60.349224)
-        (xy 178.247966 60.325) (xy 181.141824 60.325) (xy 180.718571 61.344306) (xy 180.717432 62.649966) (xy 181.216034 63.856675)
-        (xy 182.138469 64.780722) (xy 183.344306 65.281429) (xy 184.649966 65.282568) (xy 185.675 64.859033) (xy 185.675 146.141824)
-        (xy 184.655694 145.718571) (xy 183.350034 145.717432) (xy 182.143325 146.216034) (xy 181.219278 147.138469) (xy 180.718571 148.344306)
-        (xy 180.717432 149.649966) (xy 181.140967 150.675) (xy 179.82716 150.675) (xy 180.009965 150.492195) (xy 179.652568 150.134798)
+        (xy 178.247966 60.325) (xy 180.63508 60.325) (xy 180.250652 61.250806) (xy 180.24935 62.742649) (xy 180.819051 64.121429)
+        (xy 181.873022 65.177242) (xy 183.250806 65.749348) (xy 184.742649 65.75065) (xy 185.675 65.36541) (xy 185.675 145.63508)
+        (xy 184.749194 145.250652) (xy 183.257351 145.24935) (xy 181.878571 145.819051) (xy 180.822758 146.873022) (xy 180.250652 148.250806)
+        (xy 180.24935 149.742649) (xy 180.63459 150.675) (xy 179.82716 150.675) (xy 180.009965 150.492195) (xy 179.652568 150.134798)
         (xy 179.681108 149.928387) (xy 179.579869 149.419421) (xy 179.320001 149.287817) (xy 178.567817 150.04) (xy 178.956726 150.428909)
         (xy 178.710635 150.675) (xy 176.869365 150.675) (xy 176.623274 150.428909) (xy 177.012183 150.04) (xy 176.623274 149.651091)
         (xy 177.401091 148.873274) (xy 177.79 149.262183) (xy 178.542183 148.509999) (xy 178.410579 148.250131) (xy 177.678387 148.148892)
