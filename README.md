@@ -56,7 +56,7 @@ TO-220:  MJE15032 (NPN), MJE15033 (PNP), 3DA4793 (NPN), 3CA1387 (PNP)
 
 TO-126:  MJE340 (NPN), MJE350 (PNP)
 
-The output transistors are TO-247/TO-264/TO-3P type.  They should have Vcemax at least 200 V, minimum collector current 1 A, hFE at least 50, and power dissipation at 25 C at least 150 W.  Suitable types include:
+The output transistors are TO-247/TO-264/TO-3P type.  They should have Vcemax at least 200 V, minimum collector current 15 A, hFE at least 50, and power dissipation at 25 C at least 150 W.  Suitable types include:
 
 MJL3281A (NPN) / MJL1302A (PNP)  TO-264
 
@@ -64,7 +64,7 @@ MJL3281W (NPN) / MJL1302W (PNP)  TO-247
 
 NJW0281 (NPN) / NJW0302 (PNP) TO-3P
 
-2SC5200 (NPN) / 2SA1943 (NPN) TO-264
+2SC5200 (NPN) / 2SA1943 (PNP) TO-264
 
 MJL21194 (NPN) / MJL21193 (PNP) TO-264
 
@@ -146,7 +146,7 @@ The transistors Q1 and Q2 should have heatsinks attached and fitted with pads an
 
 There are three kinds of feedback that can be customized to provide a tradeoff of distortion vs. loop stability.  Some audiophiles like to attain the minimum distortion.  It is likely that the distortion is sufficiently low, especially at power levels significantly below the maximum power, that distortion is not likely to be noticed.  It is highly recommended when using compensation methods that could be more unstable that the inductor L1 is installed, as any significant capacitive loading is likely to cause oscillation.
 
-For the audiophile true believers, three feedback options are provided: Conventional Miller Compensation (CMC), Two-Pole Compensation (TPC), and Output Include Two-Pole Compensation (OITPC).
+For the audiophile true believers, three feedback options are provided: Conventional Miller Compensation (CMC), Two-Pole Compensation (TPC), and Output Inclusive Two-Pole Compensation (OITPC).  Small value capacitors are ideally silver mica type (470 pF or less), but NP0/C0G types can work as well.  The 100 nF are polypropylene film capacitors, 100 V or more.
 
 ## Conventional Miller Compensation (CMC)
 As shown, the circuit is configured for CMC.  In this case, C9=150 pF, C3=150 pF, C25 is a shorting wire, R18, C20, and C24 are not included.  For slightly less distortion, C9=100 pF and C3=100 pF. 
