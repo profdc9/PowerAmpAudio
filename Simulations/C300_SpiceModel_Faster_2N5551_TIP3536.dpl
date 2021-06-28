@@ -1,0 +1,37 @@
+<Qucs Schematic 0.0.22>
+<Properties>
+  <View=0,0,1492,800,1,0,0>
+  <Grid=10,10,0>
+  <DataSet=C300_SpiceModel_Faster_2N5551_TIP3536.dat>
+  <DataDisplay=C300_SpiceModel_Faster_2N5551_TIP3536.sch>
+  <OpenDisplay=1>
+  <Script=C300_SpiceModel_Faster_2N5551_TIP3536.m>
+  <RunScript=0>
+  <showFrame=0>
+  <FrameText0=Title>
+  <FrameText1=Drawn By:>
+  <FrameText2=Date:>
+  <FrameText3=Revision:>
+</Properties>
+<Symbol>
+</Symbol>
+<Components>
+</Components>
+<Wires>
+</Wires>
+<Diagrams>
+  <Rect 292 315 929 215 3 #c0c0c0 1 00 0 0 1e-05 0.0001 1 0.00149799 0.001 0.006 1 -0.00868283 0.05 0.211628 315 0 225 "" "" "">
+	<"ngspice/tran.v(output)" #0000ff 0 3 0 0 0>
+  </Rect>
+  <Rect 80 775 351 310 3 #c0c0c0 1 10 1 10 1 1e+07 1 -12 2 2.24176 1 -1 0.5 1 315 0 225 "" "" "">
+	<"ngspice/ac.gaind" #0000ff 0 3 0 0 0>
+  </Rect>
+  <Rect 510 783 378 313 3 #c0c0c0 1 10 1 10 1 1e+07 1 -134.514 50 200 1 -1 0.2 1 315 0 225 "" "" "">
+	<"ngspice/ac.angld" #ff0000 0 3 0 0 0>
+  </Rect>
+  <Rect 990 774 462 324 3 #c0c0c0 1 00 1 0 10000 40000 0 0 0.0001 0.001 1 -1 0.5 1 315 0 225 "" "" "">
+	<"ngspice/norm(mag(v(output)))" #0000ff 0 3 0 0 0>
+  </Rect>
+</Diagrams>
+<Paintings>
+</Paintings>
