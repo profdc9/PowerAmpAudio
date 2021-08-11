@@ -79,7 +79,6 @@
   <R R30 1 1220 490 -26 4 0 0 "120 Ohm" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <R R19 1 870 0 15 -26 0 1 "100 Ohm" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <R R31 1 1340 250 4 -22 0 1 "100 Ohm" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <C C3 1 530 180 -26 17 0 0 "47 pF" 0 "" 0 "neutral" 0>
   <R R5 1 450 180 -26 4 0 0 "1k Ohm" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <R R24 1 870 790 -41 -26 0 3 "680 Ohm" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <IProbe Pr3 1 870 210 -48 -26 0 3>
@@ -130,15 +129,16 @@
   <R R112 1 1870 860 4 -22 0 1 "16.5 Ohm" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
   <C C14 1 1940 860 17 -26 0 1 "1080 uF" 0 "" 0 "neutral" 0>
   <L L4 1 2020 860 10 -26 0 1 "5 mH" 1 "" 0>
-  <SpiceModel SpiceModel1 5 240 850 -40 18 0 0 ".MODEL 2N5551C npn\n+IS=9e-15	BF=125 		VAF=667\n+IKF=0.09	ISE=1e-15	NE=1.3		NF=1\n+RB=92 		RC=1		RE=0.1\n+CJE=45e-12 	MJE=0.35	VJE=0.75\n+CJC=4.9e-12	MJC=0.30	VJC=0.75	FC=0.5\n+TF=565e-12 	XTF=300		VTF=5		ITF=2.0\n+TR=1.2e-9	BR=3		IKR=0\n+EG=1.1 	XTB=1.5		XTI=3		NC=2\n+ISC=0		mfg=CA031011" 0 ".MODEL 2N5401C pnp\n+IS=25e-15	BF=220 		VAF=196\n+IKF=0.2	ISE=2e-15	NE=1.4		NF=1\n+RB=60 		RC=2		RE=0.1\n+CJE=35e-12 	MJE=0.40	VJE=0.75\n+CJC=15e-12	MJC=0.55	VJC=0.75	FC=0.5\n+TF=800e-12 	XTF=60	 	VTF=0		ITF=4\n+TR=1.5e-9	BR=4		IKR=0		\n+EG=1.1 	XTB=1.5		XTI=3		NC=2\n+ISC=0		mfg=CA031011" 0 ".MODEL tip42c pnp\n+IS=5.65618e-10 BF=120.073 NF=1.24004 VAF=90.6071\n+IKF=1.46498 ISE=6.98929e-14 NE=4 BR=2.83268\n+NR=1.30331 VAR=27.1221 IKR=10 ISC=6.98934e-14\n+NC=3.78125 RB=4.71382 IRB=0.234602 RBM=0.12691\n+RE=0.000666374 RC=0.0927424 XTB=3.21145 XTI=1\n+EG=1.05 CJE=1.93221e-10 VJE=0.4 MJE=0.259369\n+TF=9.99163e-09 XTF=4.41941 VTF=6.53488 ITF=0.001\n+CJC=1.0962e-10 VJC=0.731968 MJC=0.23 XCJC=0.799902\n+FC=0.799995 CJS=0 VJS=0.75 MJS=0.5\n+TR=1e-07 PTF=0 KF=0 AF=1" 0 ".MODEL tip41c npn\n+IS=7.55826e-11 BF=260.542 NF=1.11221 VAF=100\n+IKF=0.526814 ISE=1e-08 NE=2.18072 BR=26.0542\n+NR=1.5 VAR=1000 IKR=3.54059 ISC=1e-08\n+NC=1.63849 RB=4.56157 IRB=0.1 RBM=0.1\n+RE=0.0162111 RC=0.0810556 XTB=0.1 XTI=1\n+EG=1.206 CJE=1.93296e-10 VJE=0.4 MJE=0.259503\n+TF=1e-08 XTF=4.06972 VTF=7.1157 ITF=0.001\n+CJC=1.09657e-10 VJC=0.730921 MJC=0.23 XCJC=0.803085\n+FC=0.8 CJS=0 VJS=0.75 MJS=0.5\n+TR=9.01013e-08 PTF=0 KF=0 AF=1" 0 "Line_5=" 0>
   <IProbe Pr2 1 1640 200 -48 -26 0 3>
   <GND * 1 2050 670 0 0 0 0>
-  <Eqn Eqn1 1 70 830 -37 18 0 0 "angl=phase(v(Output))*57.3" 1 "pq33=(45-VEm.Vt)*Pr4.It" 1 "pq34=(45-VQ38.Vt)*Pr2.It" 1 "VbottomDif=v(Output)-v(vBottom)" 1 "VTopDif=v(vTop)-v(Output)" 1 "angli=phase(v(Input))*57.3" 1 "angld=phase(v(Output)/v(Input))*57.3" 1 "gaind=20*log10(abs(v(Output)/v(Feedback)*(330/6800)))" 1 "yes" 0>
-  <R R113 1 2050 640 4 -22 0 1 "1000k" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
-  <R R114 1 1990 600 4 -22 0 1 "0k" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <Eqn Eqn1 1 50 850 -37 18 0 0 "angl=phase(v(Output))*57.3" 1 "pq33=(45-VEm.Vt)*Pr4.It" 1 "pq34=(45-VQ38.Vt)*Pr2.It" 1 "VbottomDif=v(Output)-v(vBottom)" 1 "VTopDif=v(vTop)-v(Output)" 1 "angli=phase(v(Input))*57.3" 1 "angld=phase(v(Output)/v(Input))*57.3" 1 "gaind=20*log10(abs(v(Output)/v(Feedback)*(330/6800)))" 1 "yes" 0>
+  <C C3 1 530 180 -26 17 0 0 "100 pF" 0 "" 0 "neutral" 0>
   <.FOURIER FOUR1 1 250 580 0 79 0 0 "TR1" 1 "20" 1 "20 kHz" 1 "V(Output)" 1>
-  <.TR TR1 1 1740 130 0 79 0 0 "lin" 1 "0" 1 "0.2999 ms" 1 "4000" 1 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
-  <Vac V6 1 50 420 -92 -26 1 1 "1.8 V" 1 "20000 Hz" 0 "0" 0 "0" 0>
+  <.TR TR1 1 1750 120 0 79 0 0 "lin" 1 "0" 1 "0.1999 ms" 1 "2000" 1 "Trapezoidal" 0 "2" 0 "1 ns" 0 "1e-16" 0 "150" 0 "0.001" 0 "1 pA" 0 "1 uV" 0 "26.85" 0 "1e-3" 0 "1e-6" 0 "1" 0 "CroutLU" 0 "no" 0 "yes" 0 "0" 0>
+  <R R114 1 1990 600 4 -22 0 1 "1000k" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <R R113 1 2050 640 4 -22 0 1 "4" 0 "26.85" 0 "0.0" 0 "0.0" 0 "26.85" 0 "european" 0>
+  <Vac V6 1 50 420 18 -26 0 1 "1.5 V" 1 "20 kHz" 0 "0" 0 "0" 0>
+  <SpiceModel SpiceModel1 5 240 850 -40 18 0 0 ".MODEL 2N5551C npn\n+IS=9e-15	BF=125 		VAF=667\n+IKF=0.09	ISE=1e-15	NE=1.3		NF=1\n+RB=92 		RC=1		RE=0.1\n+CJE=45e-12 	MJE=0.35	VJE=0.75\n+CJC=4.9e-12	MJC=0.30	VJC=0.75	FC=0.5\n+TF=565e-12 	XTF=300		VTF=5		ITF=2.0\n+TR=1.2e-9	BR=3		IKR=0\n+EG=1.1 	XTB=1.5		XTI=3		NC=2\n+ISC=0		mfg=CA031011" 0 ".MODEL 2N5401C pnp\n+IS=25e-15	BF=220 		VAF=196\n+IKF=0.2	ISE=2e-15	NE=1.4		NF=1\n+RB=60 		RC=2		RE=0.1\n+CJE=35e-12 	MJE=0.40	VJE=0.75\n+CJC=15e-12	MJC=0.55	VJC=0.75	FC=0.5\n+TF=800e-12 	XTF=60	 	VTF=0		ITF=4\n+TR=1.5e-9	BR=4		IKR=0		\n+EG=1.1 	XTB=1.5		XTI=3		NC=2\n+ISC=0		mfg=CA031011" 0 ".MODEL tip42c pnp\n+IS=5.65618e-10 BF=120.073 NF=1.24004 VAF=90.6071\n+IKF=1.46498 ISE=6.98929e-14 NE=4 BR=2.83268\n+NR=1.30331 VAR=27.1221 IKR=10 ISC=6.98934e-14\n+NC=3.78125 RB=4.71382 IRB=0.234602 RBM=0.12691\n+RE=0.000666374 RC=0.0927424 XTB=3.21145 XTI=1\n+EG=1.05 CJE=1.93221e-10 VJE=0.4 MJE=0.259369\n+TF=9.99163e-09 XTF=4.41941 VTF=6.53488 ITF=0.001\n+CJC=1.0962e-10 VJC=0.731968 MJC=0.23 XCJC=0.799902\n+FC=0.799995 CJS=0 VJS=0.75 MJS=0.5\n+TR=1e-07 PTF=0 KF=0 AF=1" 0 ".MODEL tip41c npn\n+IS=7.55826e-11 BF=260.542 NF=1.11221 VAF=100\n+IKF=0.526814 ISE=1e-08 NE=2.18072 BR=26.0542\n+NR=1.5 VAR=1000 IKR=3.54059 ISC=1e-08\n+NC=1.63849 RB=4.56157 IRB=0.1 RBM=0.1\n+RE=0.0162111 RC=0.0810556 XTB=0.1 XTI=1\n+EG=1.206 CJE=1.93296e-10 VJE=0.4 MJE=0.259503\n+TF=1e-08 XTF=4.06972 VTF=7.1157 ITF=0.001\n+CJC=1.09657e-10 VJC=0.730921 MJC=0.23 XCJC=0.803085\n+FC=0.8 CJS=0 VJS=0.75 MJS=0.5\n+TR=9.01013e-08 PTF=0 KF=0 AF=1" 0 "Line_5=" 0>
 </Components>
 <Wires>
   <190 460 190 490 "" 0 0 0 "">
